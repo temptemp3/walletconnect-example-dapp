@@ -11,11 +11,11 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("/algorand-walletconnect-example-dapp/workbox-v3.6.3/workbox-sw.js");
-workbox.setConfig({modulePathPrefix: "/algorand-walletconnect-example-dapp/workbox-v3.6.3"});
+importScripts("/walletconnect-example-dapp/workbox-v3.6.3/workbox-sw.js");
+workbox.setConfig({modulePathPrefix: "/walletconnect-example-dapp/workbox-v3.6.3"});
 
 importScripts(
-  "/algorand-walletconnect-example-dapp/precache-manifest.d0eb62c6ba5ccdaf9b972a06ac61219d.js"
+  "/walletconnect-example-dapp/precache-manifest.02c942531b4b398aca2e174bf9d4b431.js"
 );
 
 workbox.clientsClaim();
@@ -29,7 +29,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/algorand-walletconnect-example-dapp/index.html", {
+workbox.routing.registerNavigationRoute("/walletconnect-example-dapp/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
